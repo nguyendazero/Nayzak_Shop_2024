@@ -35,7 +35,7 @@ public class AccountController {
     }
 
     @GetMapping("/admin/accounts")
-    public ResponseEntity<List<AccountsReponse>> accounts(){
+    public ResponseEntity<?> accounts(){
         APICustomize<List<AccountsReponse>> response = accountService.accounts();
         return ResponseEntity.status(Integer.parseInt(response.getStatusCode())).body(response.getResult());
     }
