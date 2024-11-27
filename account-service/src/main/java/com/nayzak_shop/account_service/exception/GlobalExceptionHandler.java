@@ -54,7 +54,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(AccountNotExist.class)
     public ResponseEntity<APICustomize<String>> handleAccountNotExist(AccountNotExist ex){
-        APICustomize<String> response = new APICustomize<>(ApiError.NOT_FOUND.getCode(), ApiError.NOT_FOUND.getMessage(), "Fail Delete");
+        APICustomize<String> response = new APICustomize<>(ApiError.NOT_FOUND.getCode(),ex.getMessage(), "Fail Delete");
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
     }
 
