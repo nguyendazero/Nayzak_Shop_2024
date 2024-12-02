@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Table(name = "orders")
+@Table(name = "answers")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order extends BaseEntity{
+public class Answer extends BaseEntity{
 }
