@@ -5,13 +5,10 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
-@Entity
-@Table(name = "variants_group")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class VariantGroup extends BaseEntity{
+    private long id;
 }
