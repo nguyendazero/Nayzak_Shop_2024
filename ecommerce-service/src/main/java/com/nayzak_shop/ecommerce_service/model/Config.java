@@ -21,9 +21,6 @@ public class Config extends BaseEntity{
     private String key;
 
     @Lob
-    @Column(name = "link")
-    private String link;
-
     @Column(name = "value")
     private String value;
 

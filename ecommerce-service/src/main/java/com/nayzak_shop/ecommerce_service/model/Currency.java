@@ -17,10 +17,10 @@ public class Currency extends BaseEntity{
     @Column(name = "id")
     private long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "symbol")
+    @Column(name = "symbol", nullable = false)
     private String symbol;
 
 }

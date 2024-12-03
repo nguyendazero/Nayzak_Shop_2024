@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
@@ -18,7 +21,7 @@ public class Collection extends BaseEntity{
     @Column(name = "id")
     private long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
     @Enumerated(EnumType.STRING)
@@ -28,4 +31,7 @@ public class Collection extends BaseEntity{
     @Lob
     @Column(name = "description")
     private String description;
+
+    @OneToMany(mappedBy = "collection", cascade = CascadeType.ALL)
+    private List<CollectionProduct> collectionProducts = new ArrayList<>();
 }

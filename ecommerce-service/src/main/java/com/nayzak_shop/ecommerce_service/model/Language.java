@@ -17,7 +17,7 @@ public class Language extends BaseEntity{
     @Column(name = "id")
     private long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
     @Lob

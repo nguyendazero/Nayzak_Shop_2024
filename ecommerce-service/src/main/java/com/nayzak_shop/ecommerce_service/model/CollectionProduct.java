@@ -9,8 +9,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @AllArgsConstructor
 @Entity
-@Table(name = "posts_tags")
-public class PostTag extends BaseEntity{
+@Table(name = "collections_products")
+public class CollectionProduct extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +18,10 @@ public class PostTag extends BaseEntity{
     private long id;
 
     @ManyToOne
-    @JoinColumn(name = "tag_id", nullable = false)
-    private Tag tag;
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
 
     @ManyToOne
-    @JoinColumn(name = "post_id", nullable = false)
-    private Post post;
+    @JoinColumn(name = "collection_id", nullable = false)
+    private Collection collection;
 }
