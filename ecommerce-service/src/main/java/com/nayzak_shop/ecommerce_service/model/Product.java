@@ -34,9 +34,6 @@ public class Product extends BaseEntity{
     @Column(name = "hight_light_image", nullable = false)
     private String hightLightImage;
 
-    @Column(name = "discount")
-    private BigDecimal discount;
-
     @Column(name = "view_count")
     private long viewCount;
 

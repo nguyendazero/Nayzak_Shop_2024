@@ -24,8 +24,8 @@ public class ProductAvailableVariant extends BaseEntity{
     @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "discount_price")
-    private BigDecimal discountPrice;
+    @Column(name = "discount")
+    private BigDecimal discount;
 
     @Column(name = "stock", nullable = false)
     private long stock;
