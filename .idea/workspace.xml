@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fa9a9518-0d8a-4a06-86fd-4f4b90b2e3ab" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.idea/SpringBoot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/nayzak_shop/api_gateway/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/exception/GlobalExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
