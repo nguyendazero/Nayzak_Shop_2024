@@ -8,10 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class AddToCartRequest {
-    private long productId;
-    private long quantity;
-    private List<Long> variantIds = new ArrayList<>();
+@NoArgsConstructor
+public class GetPostsRequest {
+    private String search;
+    private String orderBy;
+    private String sortBy;
+    private List<Long> categoryIds = new ArrayList<>();
 }

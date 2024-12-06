@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UploadFileRequest {
-    private String image;
+public class AddToWishListRequest {
+    private long productId;
 }
