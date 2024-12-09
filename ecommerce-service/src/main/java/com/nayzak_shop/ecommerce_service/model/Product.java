@@ -31,8 +31,8 @@ public class Product extends BaseEntity{
     @Column(name = "weight")
     private BigDecimal weight;
 
-    @Column(name = "hight_light_image", nullable = false)
-    private String hightLightImage;
+    @Column(name = "hight_lighted_image", nullable = false)
+    private String hightLightedImage;
 
     @Column(name = "view_count")
     private long viewCount;
@@ -43,6 +43,10 @@ public class Product extends BaseEntity{
     @Lob
     @Column(name = "introduction")
     private String introduction;
+
+    @OneToOne
+    @JoinColumn(name = "discount", unique = true)
+    private Discount discount;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

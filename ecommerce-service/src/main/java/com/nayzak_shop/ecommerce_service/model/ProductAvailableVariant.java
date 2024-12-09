@@ -24,15 +24,16 @@ public class ProductAvailableVariant extends BaseEntity{
     @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "discount")
-    private BigDecimal discount;
-
     @Column(name = "stock", nullable = false)
     private long stock;
 
     @Lob
-    @Column(name = "hight_light_image", nullable = false)
-    private String hightLightImage;
+    @Column(name = "hight_lighted_image", nullable = false)
+    private String hightLightedImage;
+
+    @OneToOne
+    @JoinColumn(name = "discount", unique = true)
+    private Discount discount;
 
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)
