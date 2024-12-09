@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @EqualsAndHashCode(callSuper = true)
@@ -20,5 +22,11 @@ public class Discount extends BaseEntity{
 
     @Column(name = "discount_value")
     private BigDecimal discountValue;
+
+    @OneToMany(mappedBy = "discount", cascade = CascadeType.ALL)
+    private List<Product> products = new ArrayList<>();
+
+    @OneToMany(mappedBy = "discount", cascade = CascadeType.ALL)
+    private List<ProductAvailableVariant> productAvailableVariants = new ArrayList<>();
 
 }

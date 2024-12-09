@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/user-temp")
+@RequestMapping("/api/user-temp")
 public class UserTempController {
 }

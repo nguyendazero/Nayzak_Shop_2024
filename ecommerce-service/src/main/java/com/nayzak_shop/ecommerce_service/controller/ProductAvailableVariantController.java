@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/product-available-variant")
+@RequestMapping("/api/product-available-variant")
 public class ProductAvailableVariantController {
 }

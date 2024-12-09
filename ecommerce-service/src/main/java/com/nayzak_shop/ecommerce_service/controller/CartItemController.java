@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/cart-item")
+@RequestMapping("/api/cart-item")
 public class CartItemController {
 }

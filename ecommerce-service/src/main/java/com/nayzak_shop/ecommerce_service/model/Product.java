@@ -44,8 +44,8 @@ public class Product extends BaseEntity{
     @Column(name = "introduction")
     private String introduction;
 
-    @OneToOne
-    @JoinColumn(name = "discount", unique = true)
+    @ManyToOne
+    @JoinColumn(name = "discount")
     private Discount discount;
 
     @ManyToOne
@@ -56,7 +56,7 @@ public class Product extends BaseEntity{
     private List<ProductAvailableVariant> productAvailableVariants;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    private List<CollectionProduct> collectionProducts;
+    private List<CollectionProduct> collectionProducts = new ArrayList<>();
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<WishList> wishLists = new ArrayList<>();

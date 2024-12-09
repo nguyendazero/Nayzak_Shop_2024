@@ -26,6 +26,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -56,7 +57,7 @@ public class AccountServiceImpl implements AccountService {
     public APICustomize<LoginResponse> authenticateUser(LoginRequest loginRequest) {
         try {
             Authentication authentication = authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword())
+                    new UsernamePasswordAuthenticationToken(loginRequest.getHaibazoAlias(), loginRequest.getPassword())
             );
 
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
@@ -66,12 +67,25 @@ public class AccountServiceImpl implements AccountService {
                     .map(GrantedAuthority::getAuthority)
                     .collect(Collectors.toList());
 
-            // Tạo JWT token với roles
+            // Tạo JWT token và refresh token
             String jwtToken = jwtUtils.generateTokenFromUsername(userDetails);
-
             String refreshToken = jwtUtils.generateRefreshTokenFromUsername(userDetails);
 
-            LoginResponse response = new LoginResponse(userDetails.getUsername(), roles, jwtToken, refreshToken);
+            // Lấy thông tin người dùng từ cơ sở dữ liệu
+            Account account = accountRepository.findByUsername(userDetails.getUsername())
+                    .orElseThrow(() -> new ErrorLoginException("Account not found"));
+
+            // Tạo response với đầy đủ các trường
+            LoginResponse response = new LoginResponse(
+                    account.getId(),
+                    account.getFullName(),
+                    account.getUsername(),
+                    roles,
+                    jwtToken,
+                    refreshToken,
+                    account.getCreatedAt(),
+                    account.getUpdatedAt()
+            );
 
             return new APICustomize<>(ApiError.OK.getCode(), ApiError.OK.getMessage(), response);
         } catch (BadCredentialsException e) {
@@ -86,21 +100,31 @@ public class AccountServiceImpl implements AccountService {
             throw new UserExistException("Username is exist");
         }
 
+        if(accountRepository.existsByEmail(registerRequest.getEmail())){
+            throw new UserExistException("Email is exist");
+        }
+
         if(!registerRequest.getPassword().equals(registerRequest.getRePassword())){
             throw new PasswordNotMatchException("Password not match");
         }
 
-        Account newUser = new Account();
-        newUser.setUsername(registerRequest.getUsername());
-        newUser.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
-        newUser.setEnabled(true);
-        newUser.setRole("ROLE_USER");
+        Account newAccount = new Account();
+        newAccount.setFullName(registerRequest.getFullName());
+        newAccount.setEmail(registerRequest.getEmail());
+        newAccount.setUsername(registerRequest.getUsername());
+        newAccount.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+        newAccount.setEnabled(true);
+        newAccount.setRole("ROLE_USER");
 
-        accountRepository.save(newUser);
+        accountRepository.save(newAccount);
 
         RegisterResponse response = new RegisterResponse(
-                newUser.getUsername(),
-                newUser.getPassword(),
+                newAccount.getId(),
+                newAccount.getFullName(),
+                newAccount.getUsername(),
+                newAccount.getRole(),
+                newAccount.getCreatedAt(),
+                newAccount.getUpdatedAt(),
                 "Register Successfully"
         );
 

@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/collection-product")
+@RequestMapping("/api/collection-product")
 public class CollectionProductController {
 }

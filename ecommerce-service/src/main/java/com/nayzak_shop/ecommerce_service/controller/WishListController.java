@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/wishlist")
+@RequestMapping("/api/wishlist")
 public class WishListController {
 }

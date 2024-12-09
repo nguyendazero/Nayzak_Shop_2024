@@ -31,8 +31,8 @@ public class ProductAvailableVariant extends BaseEntity{
     @Column(name = "hight_lighted_image", nullable = false)
     private String hightLightedImage;
 
-    @OneToOne
-    @JoinColumn(name = "discount", unique = true)
+    @ManyToOne
+    @JoinColumn(name = "discount")
     private Discount discount;
 
     @ManyToOne

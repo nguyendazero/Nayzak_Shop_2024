@@ -5,8 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa9a9518-0d8a-4a06-86fd-4f4b90b2e3ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/SpringBoot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/DiscountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/repository/DiscountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/service/DiscountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/service/impl/DiscountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/request/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/response/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/response/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/response/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/dto/response/RegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/nayzak_shop/account_service/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/AnswerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CartItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CartItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CollectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CollectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CollectionProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CollectionProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CountryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/CurrencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/DistrictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/DistrictController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/LanguageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/LanguageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/NotificationUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/NotificationUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/OrderDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostTagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/PostTagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductAvailableVariantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductAvailableVariantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductVariantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ProductVariantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/StateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/StateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserCouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserCouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserTempController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/UserTempController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/VariantGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/VariantGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/WardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/WardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/WishListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/controller/WishListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/ProductAvailableVariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-service/src/main/java/com/nayzak_shop/ecommerce_service/model/ProductAvailableVariant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +68,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,7 +93,7 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2op2tnPCZOD57M5GsKjqBHLWT7o" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -65,7 +117,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AccountServiceApplication">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nayzak_shop.account_service.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EcommerceServiceApplication">
     <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nayzak_shop.account_service.AccountServiceApplication" />
       <module name="account-service" />
@@ -121,9 +178,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AccountServiceApplication" />
+        <item itemvalue="Application.EcommerceServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="Application.EcommerceServiceApplication" />
       </list>
     </recent_temporary>
   </component>

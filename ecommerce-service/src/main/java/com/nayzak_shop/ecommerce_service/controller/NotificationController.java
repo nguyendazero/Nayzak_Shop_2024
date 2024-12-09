@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/notification")
+@RequestMapping("/api/notification")
 public class NotificationController {
 }

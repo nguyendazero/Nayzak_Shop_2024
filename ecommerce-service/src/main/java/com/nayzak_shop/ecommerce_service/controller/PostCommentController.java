@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Validated
 @RequiredArgsConstructor
-@RequestMapping("/v1/post-comment")
+@RequestMapping("/api/post-comment")
 public class PostCommentController {
 }
