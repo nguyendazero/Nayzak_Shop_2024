@@ -4,23 +4,24 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "currencies")
 public class Currency extends BaseEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private long id;
+    @Column(name = "code")
+    private String code;
 
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "symbol", nullable = false)
-    private String symbol;
+    @Column(name = "region", nullable = false)
+    private String region;
 
 }

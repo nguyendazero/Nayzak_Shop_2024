@@ -1,4 +1,7 @@
 package com.nayzak_shop.ecommerce_service.repository;
 
-public interface DiscountRepository {
+import com.nayzak_shop.ecommerce_service.model.Discount;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DiscountRepository extends JpaRepository<Discount, Long> {
 }

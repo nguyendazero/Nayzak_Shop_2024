@@ -1,5 +1,7 @@
 package com.nayzak_shop.ecommerce_service.enums;
 
+import org.springframework.http.HttpStatusCode;
+
 public enum ApiError {
     // 1xx Informational
     CONTINUE("100", "Continue"),
@@ -77,7 +79,7 @@ public enum ApiError {
         this.message = message;
     }
 
-    public String getCode() {
+    public String  getCode() {
         return code;
     }
 

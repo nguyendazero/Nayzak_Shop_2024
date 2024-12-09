@@ -1,4 +1,7 @@
 package com.nayzak_shop.ecommerce_service.repository;
 
-public interface TagRepository {
+import com.nayzak_shop.ecommerce_service.model.Tag;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TagRepository extends JpaRepository<Tag, Long> {
 }

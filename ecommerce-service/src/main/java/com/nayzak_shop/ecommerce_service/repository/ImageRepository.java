@@ -1,4 +1,7 @@
 package com.nayzak_shop.ecommerce_service.repository;
 
-public interface ImageRepository {
+import com.nayzak_shop.ecommerce_service.model.Image;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ImageRepository extends JpaRepository<Image, Long> {
 }
